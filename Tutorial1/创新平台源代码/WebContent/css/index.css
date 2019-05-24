@@ -1,0 +1,113 @@
+@charset "UTF-8";
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			
+		}
+		.wrapper{
+			position: absolute;
+			width:100%;
+			height:100%;
+			background: url(../images/loginInput-bg.jpg) no-repeat;
+			background-size: 100% 100%;
+			
+		}
+		form{
+			position:absolute;
+			top: 10%;
+			right: 35%;
+			width:25%;
+			height:70%;
+			background-color: #bbb;
+			opacity: 0.8;
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+		form p{
+			width: 100%;
+			height: 60px;
+			line-height: 60px;
+			font-size: 25px;
+			font-weight: 800;
+			color:   #004A80;
+			overflow: hidden;
+			text-align: center;
+			margin-top:20px;
+		}
+		.user{
+			margin-top: 30px;
+			
+		}
+		.user  img{
+			margin-left: 40px;
+		}
+		input{
+			height: 43px;
+			width: 100%;
+			line-height:43px;
+			font-size: 20px;
+			background-color: #fff;
+		}
+		.password{
+			margin-top: 30px;
+		}
+		.password img{
+			margin-left: 40px;
+		}
+		.anniu{
+			width: 100%;
+			height: 13%;
+			margin-top: 60px;
+		}
+		.anniu button{
+			height: 80%;
+			width: 30%;
+			margin-left: 30px;
+			border-radius: 20%;
+		}
+		.anniu button img{
+			width: 100%;
+			height: 100%;
+			border-radius: 20%;
+		}
+		.anniu a{
+			display: inline-block;
+			height:100%;
+			width: 25%;
+		}
+		a{
+			margin-top: 20px;
+			position: absolute;
+			right: 10%;
+		}
+		
+		
+		input::-webkit-input-placeholder{
+            color:#CCC;
+            font-size:18px;
+            line-height:43px;
+            padding-left:10px;
+            font-style: italic;
+        }
+        input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+            color:#CCC;
+            font-size:18px;
+            line-height:43px;
+            padding-left:10px;
+            font-style: italic;
+        }
+        input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+           color:#CCC;
+            font-size:18px;
+            line-height:43px;
+            padding-left:10px;
+            font-style: italic;
+        }
+        input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+            color:#CCC;
+            font-size:18px;
+            line-height:43px;
+            padding-left:10px;
+            font-style: italic;

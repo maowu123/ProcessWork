@@ -1,0 +1,50 @@
+@charset "UTF-8";
+<style type="text/css">
+        body {
+            background: #ccc;
+        }
+
+        label {
+            width: 100px;
+            display: inline-block;
+        }
+
+        .container {
+            margin: 20px auto;
+            width: 600px;
+            padding: 50px;
+            line-height: 40px;
+            border: 1px solid #999;
+            background: #efefef;
+        }
+
+        span {
+            margin-left: 30px;
+            font-size: 12px;
+            padding:2px 20px 0;
+            color: #888;
+        }
+
+        .wrong {
+            color: red;
+            background: url(../images/error.png) no-repeat;
+            
+        }
+
+        .right {
+            color: green;
+            background: url(../images/right.png) no-repeat;
+        }
+         .btn{
+            position: relative;
+            top: 20px;
+            left: 30%;
+            width:40%;
+            height: 50px;
+            line-height: 50px;
+            font-size: 30px;
+            font-weight: 800;
+        }
+        
+        
+    </style>

@@ -1,0 +1,87 @@
+@charset "UTF-8";
+*{
+			margin: 0;
+			padding: 0;
+		}
+		.wrapper{
+			position: relative;
+			width: 100%;
+			background-color: #ccc;
+		}
+		.wrapper .head{
+			position: absolute;
+			width: 100%;
+			background-color: #ccc;
+			border: 1px solid #000;
+		}
+		.wrapper .head img{
+			width: 100%;
+		}
+		.wrapper .bottom{
+			position: absolute;
+			margin-top: 7.5%;
+			width: 100%;
+			height: 800px;
+			background-color: #ccc;
+			border: 1px solid #000;
+		}
+		.wrapper .bottom .left{
+			position: fixed;
+			width: 15%;
+			height: 100%;
+			background-color: #fff ;
+			border: 1px solid #000;
+
+		}
+		.wrapper .bottom .left p{
+			width: 100%;
+			height: 40px;
+			font-size: 20px;
+			line-height: 40px;
+			background-color: blue;
+			color: #fff;
+			text-align: center;
+			font-weight: 800;
+		}
+		.wrapper .bottom .left ul{
+			padding-left:20%;
+			list-style:none;
+			background-color: #6495ed;
+			font-size:16px;
+			font-weight:700;
+		}
+		.wrapper .bottom .left ul li{
+			padding:5px 0 5px 0;
+			
+		}
+		.wrapper .bottom .left ul .litem ul{
+		}
+		.wrapper .bottom .right{
+			position: absolute;
+			left: 15%;
+			width: 85%;
+			height: 100%;
+			background-color:white;
+			border: 1px solid #000;
+		}
+		.wrapper .bottom .right ul{
+			list-style:none;
+			position:absolute;
+			top:60px;
+		}
+		.wrapper .bottom .right ul li{
+			margin:auto;
+		}
+		.wrapper .bottom .right ul li span{
+			display:inline-block;
+			width:185px;
+			text-align:center;
+		}
+		.wrapper .bottom .right ul li span a{
+			text-decoration: none;
+			color:blue;
+		}
+		a{
+			text-decoration: none;
+			color:#000;
+		}

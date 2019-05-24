@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script src="js/echarts.min.js"></script>
+<style>
+#echartsJs{
+	left:5%;
+	width:40%;
+	height:400px;
+}
+#echartsJs1{
+	height:400px;
+	left:5%;
+	width:40%;
+}
+#echartsJs2{
+	left:5%;
+	width:40%;
+	height:400px;
+}
+#echartsJs3{
+	left:5%;
+	width:40%;
+	height:400px;
+}
+#echartsJs4{
+	left:5%;
+	width:40%;
+	height:400px;
+}
+#echartsJs5{
+	left:5%;
+	width:40%;
+	height:400px;
+}
+</style>
+<body>
+<div id="echartsJs5"></div>
+</body>
+<script language="javascript">
+
+	 var myChart = echarts.init(document.getElementById('echartsJs1'));
+	
+	 var option = {
+			    title : {
+			        text: '统计最繁忙的机场 Top10',
+			        x:'center'
+			    },
+			    tooltip : {
+			        trigger: 'item',
+			        formatter: "{a} <br/>{b} : {c} ({d}%)"
+			    },
+			    legend: {
+			        orient: 'vertical',
+			        left: 'left',
+			        data: ['C32','C9' ,'C43','C24','C18','C1','C38','C7']
+			    },
+			    series : [
+			        {
+			            name: '访问来源',
+			            type: 'pie',
+			            radius : '55%',
+			            center: ['50%', '60%'],
+			            data:[
+			                {value:13569, name:'C32'},
+			                {value:87452, name:'C24'},                       /*数值插入  */
+			                {value:13489, name:'C9'},
+			                {value:95685, name:'C43'},
+			                {value:123846, name:'C1'},
+			                {value:69871, name:'C38'},
+			                {value:25687, name:'C7'},
+			                {value:14236, name:'C18'}
+			            ],
+			            itemStyle: {
+			                emphasis: {
+			                    shadowBlur: 10,
+			                    shadowOffsetX: 0,
+			                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+			                }
+			            }
+			        }
+			    ]
+			};
+	 myChart.setOption(option);
+</script>
+<script language="javascript">
+
+	 var myChart = echarts.init(document.getElementById('echartsJs2'));
+	 var option = {
+			 xAxis: {
+			        type: 'category',
+			        data: ['C32','C9' ,'C43','C24','C18','C1','C38','C7']
+			    },
+			    yAxis: {
+			        type: 'value'
+			    },
+			    series: [{
+			        data: [13569, 13489, 95685, 87452, 14236,123846,69871,25687],
+			        type: 'bar'
+			    }]
+			};
+	 myChart.setOption(option);
+</script>
+<script language="javascript">
+
+	 var myChart = echarts.init(document.getElementById('echartsJs3'));
+	
+	 var option = {
+			    title : {
+			        text: '统计最大的代理人 TOP10',
+			        x:'center'
+			    },
+			    tooltip : {
+			        trigger: 'item',
+			        formatter: "{a} <br/>{b} : {c} ({d}%)"
+			    },
+			    legend: {
+			        orient: 'vertical',
+			        left: 'left',
+			        data: ['O5234','O1173' ,'O1182','O6070','O5733','O6278','O5852','O6174']
+			    },
+			    series : [
+			        {
+			            name: '访问来源',
+			            type: 'pie',
+			            radius : '55%',
+			            center: ['50%', '60%'],
+			            data:[
+			                {value:49685, name:'O5234'},
+			                {value:85154, name:'O1173'},                       /*数值插入  */
+			                {value:14895, name:'O1182'},
+			                {value:12756, name:'O6070'},
+			                {value:63958, name:'O5733'},
+			                {value:69871, name:'O6278'},
+			                {value:25847, name:'O5852'},
+			                {value:36957, name:'O6174'}
+			            ],
+			            itemStyle: {
+			                emphasis: {
+			                    shadowBlur: 10,
+			                    shadowOffsetX: 0,
+			                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+			                }
+			            }
+			        }
+			    ]
+			};
+	 myChart.setOption(option);
+</script>
+<script language="javascript">
+
+	 var myChart = echarts.init(document.getElementById('echartsJs4'));
+	 var option = {
+			 xAxis: {
+			        type: 'category',
+			        data: ['O5234','O1173' ,'O1182','O6070','O5733','O6278','O5852','O6174']
+			    },
+			    yAxis: {
+			        type: 'value'
+			    },
+			    series: [{
+			        data: [49685, 85154, 14895, 12756, 63958,69871,25847,36957],
+			        type: 'bar'
+			    }]
+			};
+	 myChart.setOption(option);
+</script>
+<script language="javascript">
+
+	 var myChart = echarts.init(document.getElementById('echartsJs5'));
+	 var option = {
+			    title: {
+			        text: ''
+			    },
+			    tooltip: {
+			        trigger: 'axis'
+			    },
+			    legend: {
+			        data:['C32','C9' ,'C43','C24','C18','C1','C38','C7']
+			    },
+			    grid: {
+			        left: '3%',
+			        right: '4%',
+			        bottom: '3%',
+			        containLabel: true
+			    },
+			    toolbox: {
+			        feature: {
+			            saveAsImage: {}
+			        }
+			    },
+			    xAxis: {
+			        type: 'category',
+			        boundaryGap: false,
+			        data: ['top1','top2','top3','top4','top5','top6','top7','top8','top9','top10']
+			    },
+			    yAxis: {
+			        type: 'value'
+			    },
+			    series: [
+			        {
+			            name:'C32',
+			            type:'line',
+			            stack: '总量',
+			            data:[8569, 7589, 7019, 6354,5014, 3048, 2694, 1625,1256,968]
+			        },
+			        {
+			            name:'C9',
+			            type:'line',
+			            stack: '总量',
+			            data:[8345, 7423, 6986, 6254,4871, 2948, 2498, 1487,1065,856]
+			        },
+			        {
+			            name:'C43',
+			            type:'line',
+			            stack: '总量',
+			            data:[8057, 7358, 6843,6054, 4625, 2659, 2236, 1258,1042,745]
+			        },
+			        {
+			            name:'C24',
+			            type:'line',
+			            stack: '总量',
+			            data:[7589, 7048, 6715,5814, 4236, 2574, 2015, 1169,956,712]
+			        },
+			        {
+			            name:'C18',
+			            type:'line',
+			            stack: '总量',
+			            data:[7412, 6948, 6528, 5796,4095, 2365, 1958, 1095,841,654]
+			        },
+			        {
+			            name:'C1',
+			            type:'line',
+			            stack: '总量',
+			            data:[7077, 6351, 5269, 5498,3947, 2214, 1826, 963,712,541]
+			        },
+			        {
+			            name:'C38',
+			            type:'line',
+			            stack: '总量',
+			            data:[6895, 6244, 5036, 5236,3816, 2018, 1569, 585,463,356]
+			        },
+			        {
+			            name:'C7',
+			            type:'line',
+			            stack: '总量',
+			            data:[6874, 6023, 5021, 4569,3612, 2000, 1365, 320,236,105]
+			        }
+			    ]
+			};
+
+	 myChart.setOption(option);
+</script>
+</html>

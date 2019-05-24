@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        $(function () {            
+            $(".like").click(function () {
+                $(this).toggleClass('cs');                
+            })
+        })
+</script>
+<style>
+.like{ font-size:16px;  color:#ccc; cursor:pointer;}
+.cs{color:#f00;}
+</style>
+<script type="text/javascript">
+$(function() {
+	  $('label').click(function(){
+	    var radioId = $(this).attr('name');
+	    $('label').removeAttr('class') && $(this).attr('class', 'checked');
+	    $('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+	  });
+	});
+</script>
+<style>
+input[type="radio"] {
+  margin: 3px 3px 0px 5px;
+  display: none;
+}
+label {
+  padding-left: 20px;
+  cursor: pointer;
+  background: url(./bg.gif) no-repeat left top;
+}
+label.checked {
+  background-position: left bottom;
+}
+</style>
+<body>
+<p class="like">&#10084;</p>
+<input type="radio" id="nba" checked="checked" name="sport" value="nba">
+<label name="nba" class="checked" for="nba">NBA</label>
+<input type="radio" id="cba" name="sport" value="cba">
+<label name="cba" for="cba">CBA</label>
+</body>
+</html>

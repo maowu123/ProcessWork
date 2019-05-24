@@ -1,0 +1,112 @@
+@charset "UTF-8";
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	label {
+            width:100px;
+            display: inline-block;
+            font-weight:600;
+    }
+	.wrapper{
+		position: relative;
+		width: 100%;
+		background-color: #ccc;
+	}
+	.wrapper .head{
+		position: absolute;
+		width: 100%;
+		background-color: #ccc;
+	}
+	.wrapper .head img{
+		width: 100%;
+	}
+	.wrapper .bottom{
+		position: absolute;
+		margin-top: 7.5%;
+		width: 100%;
+		height: 800px;
+		background-color: #fff;
+	}
+	.wrapper .bottom .left{
+		position: fixed;
+		width: 15%;
+		height: 100%;
+		background-color: #fff ;
+	
+	}
+	.wrapper .bottom .left p{
+		width: 100%;
+		height: 40px;
+		font-size: 20px;
+		line-height: 40px;
+		background-color: blue;
+		color: #fff;
+		text-align: center;
+		font-weight: 800;
+	}
+	.wrapper .bottom .left ul{
+		padding-left:20%;
+		list-style:none;
+		background-color: #6495ed;
+		font-size:16px;
+		font-weight:700;
+	}
+	.wrapper .bottom .left ul li{
+		padding:5px 0 5px 0;
+		
+	}
+	.wrapper .bottom .right{
+		position: absolute;
+		left: 15%;
+		width: 85%;
+		height: 150%;
+	}
+	a{
+		text-decoration: none;
+		color: #000;
+	}
+	.wrapper .bottom .right .content{
+		position:relative;
+		width:100%;
+		height:100%;
+		padding:20px;
+		background-color: #efefef;
+	}
+	.wrapper .bottom .right .content p{
+		 text-align:center;
+		 font-size:40px;
+		 font-weight:400;
+		 margin-bottom:20px;
+	}
+	.wrapper .bottom .right .content form input{
+		margin-bottom:20px;
+	}
+	.wrapper .bottom .right .content span{
+		padding-left:15px;
+	}
+	.wrapper .bottom .right .content form p{
+		text-align:left;
+		font-size:25px;
+		 font-weight:400;
+		 background-color:#ccc;
+		 margin-bottom:20px;
+	}
+	.btn button{
+		margin-left:20%;
+		margin-top:5%;
+		width:200px;
+		height:50px;
+		font-size:30px;
+		line-height:50px;
+		font-weight:500;
+	}
+	.wrong {
+	    color: red;
+	    background: url(../images/error.png) no-repeat;
+	}
+
+   	.true { 
+		color: green;
+		background: url(../images/right.png) no-repeat;
+   	}
